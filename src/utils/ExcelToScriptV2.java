@@ -25,9 +25,9 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
  * poi-scratchpad-4.1.2.jar
  */
 public class ExcelToScriptV2 {
-    private static final String EXCEL_FILE = "C:\\Users\\A707963\\Desktop\\addon.xlsx";
-    private static final String SQL_FILE ="C:\\Users\\A707963\\Desktop\\insert_addon_4885_5067.sql";
-    private static final String ROLLBACK_SQL_FILE ="C:\\Users\\A707963\\Desktop\\rollback_addon_4885_5067.sql";
+    private static final String EXCEL_FILE = "C:\\Users\\A707963\\Desktop\\ongoingCR's\\DSL_CR5183\\IMP_DOCS\\RATEPLAN_ADDON_2_5183.xlsx";
+    private static final String SQL_FILE ="C:\\Users\\A707963\\Desktop\\insert_RATEPLAN_ADDON_5183_2.sql";
+    private static final String ROLLBACK_SQL_FILE ="C:\\Users\\A707963\\Desktop\\rollback_RATEPLAN_ADDON_5183_2.sql";
     static String tableName;
     static String columnNames;
     static XSSFWorkbook myWorkBook;

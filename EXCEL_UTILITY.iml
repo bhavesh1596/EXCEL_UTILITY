@@ -10,5 +10,6 @@
     <orderEntry type="library" name="poi-4.1.2" level="project" />
     <orderEntry type="library" name="activation-1.1.1" level="project" />
     <orderEntry type="library" name="curvesapi-1.06" level="project" />
+    <orderEntry type="library" name="ojdbc6" level="project" />
   </component>
 </module>
