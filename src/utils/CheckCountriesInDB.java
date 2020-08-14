@@ -33,8 +33,8 @@ public class CheckCountriesInDB {
                             }
                         }
                     }
+                    System.out.println("Total of "+count+"/"+ countrySheet.getLastRowNum()+" records not found in DB ");
                 }
-                System.out.println("Total of "+count+" records not found in DB");
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             } catch (IOException e) {
@@ -48,7 +48,7 @@ public class CheckCountriesInDB {
         //stem.out.println("Checking country "+countryName);
         try(final PreparedStatement ps = con.prepareStatement("select COUNTRY_NAME from COUNTRY where COUNTRY_NAME = ?")) {
             if(null != ps) {
-                ps.setString(1,countryName.toUpperCase());
+                ps.setString(1,countryName.trim().toUpperCase());
                 try(final ResultSet rs = ps.executeQuery()) {
                     if(null != rs) {
                         if(rs.next()) {
@@ -60,7 +60,7 @@ public class CheckCountriesInDB {
                         }
                         else {
                             count++;
-                            System.out.println(count+" countryName :: " +countryName.toUpperCase()+" from excel !! NOT FOUND !! in Database ");
+                            System.out.println(count+" countryName :: " +countryName+" from excel !! NOT FOUND !! in Database ");
                         }
                     }
                 }
